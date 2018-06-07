@@ -65,6 +65,7 @@ function pauseTimer() {
 function resetTimer() {
   clearInterval(countdown);
   isBreak = false;
+  pausedSeconds = null;
   displayTimer(activityTime);
 }
 
