@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pomodoro Timer</title>
+
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron:500" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="activityBg">
+  <div class="container">
+    <div class="timer">
+      <div class="timer__presets">
+        <button data-time="5" class="btn">5</button>
+        <button data-time="10" class="btn">10</button>
+        <button data-time="15" class="btn">15</button>
+        <button data-time="30" class="btn">30</button>
+      </div>
+      <div class="timer__display"></div>
+      <div class="timer__control">
+        <button class="btn btn-start">Start</button>
+        <button class="btn btn-pause">Pause</button>
+        <button class="btn btn-reset">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <audio src="sounds/codeccall.wav"></audio>
+  <script src="js/index.js"></script>
+</body>
+</html>
