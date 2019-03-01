@@ -6,25 +6,32 @@
   box-sizing: inherit;
 }
 
-
 html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
 
 body {
-font-family: "Orbitron", sans-serif;
-font-weight: 500;
-height: 100vh;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 500;
+  height: 100vh;
 }
 
 .activityBg {
-  background: linear-gradient(to right top, rgba(255,94,0,1), rgba(255,205,0,1));
+  background: linear-gradient(
+    to right top,
+    rgba(255, 94, 0, 1),
+    rgba(255, 205, 0, 1)
+  );
   background-repeat: no-repeat;
 }
 
 .breakBg {
-  background: linear-gradient(to right top, rgba(255,94,0,1), rgb(253, 0, 140));
+  background: linear-gradient(
+    to right top,
+    rgba(255, 94, 0, 1),
+    rgb(253, 0, 140)
+  );
   background-repeat: no-repeat;
 }
 
@@ -35,31 +42,29 @@ height: 100vh;
   height: 100%;
 }
 
-
 .timer {
   width: 40rem;
   display: flex;
-  flex-direction: column;  
-  
+  flex-direction: column;
 }
 
 .timer__presets {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
 .timer__display {
   font-size: 11rem;
   color: #fff;
-  display:  flex;
-  justify-content:  center;
+  display: flex;
+  justify-content: center;
 }
 
 .timer__control {
   display: flex;
   justify-content: space-between;
 }
-
 
 .btn {
   font: inherit;
@@ -72,45 +77,35 @@ height: 100vh;
   flex: 1 0 auto;
   padding: 1rem;
   margin: 2px;
-  transition: all .2s;
-  
+  transition: all 0.2s;
 }
 
 .btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
- }
+}
 
-
- .btn:focus {
+.btn:focus {
   outline: none;
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-
-
-  
 }
 
+.btn:active {
+  outline: none;
+  transform: translateY(4px);
+  box-shadow: none;
+}
 
-  .btn:active {
-    outline: none;
-    transform: translateY(4px);
-   box-shadow: none;
-
- }
-
-
-@media (max-width: 420px){
-
+@media (max-width: 420px) {
   .timer {
     height: 100%;
-   justify-content: space-between;
+    justify-content: space-between;
   }
 
   .timer__display {
     font-size: 8rem;
     color: #fff;
-
   }
 
   .timer__control {
